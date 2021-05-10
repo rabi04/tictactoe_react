@@ -20,11 +20,7 @@ export default class Tictactoegrid extends Component{
         for(let i=0; i<3; i++){
             let gridrowelement = [];
             for(let j=0;j<3;j++){
-                gridrowelement.push(
-                < Cell
-                 imagetype={this.state.playerturn}
-                 changeTurn={this.changeTurn}
-                />);
+                gridrowelement.push(< Cell imagetype={this.state.playerturn} changeTurn={this.changeTurn} />);
             }
             gridelement.push(<div className="row">{[...gridrowelement]}</div>);
         }

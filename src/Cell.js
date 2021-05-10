@@ -10,7 +10,7 @@ export default class Cell extends Component{
             
         }
     }
-     mat = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]]
+    
 
     changeClicked =()=>{
         if(this.state.clicked === -1){
@@ -18,7 +18,7 @@ export default class Cell extends Component{
                 clicked : this.props.imagetype
            });
             this.props.changeTurn();
-           console.log(mat[this.props.row_pos][this.props.column_pos]);
+      //     console.log(mat[this.props.row_pos][this.props.column_pos]);
         } 
     }
     getcellcontain = () =>{
